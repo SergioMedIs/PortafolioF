@@ -9,7 +9,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Sergio Fabian Medina Islas
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -51,7 +51,7 @@ export default function StickyFooter() {
        > 
         <Container maxWidth="sm" color='black'>
           <Typography variant="body1">
-            My sticky footer can be found here.
+           Portafolio
           </Typography>
           <Copyright />
         </Container>

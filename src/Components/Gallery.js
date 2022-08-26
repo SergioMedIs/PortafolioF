@@ -46,8 +46,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/googletest001/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/googletest001/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -74,8 +74,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/3-FLEXBOX-CSS-GRID-spotify-premium-/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/3-FLEXBOX-CSS-GRID-spotify-premium-/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -103,8 +103,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/3-FLEXBOX-CSS-GRID-spotify/#">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/3-FLEXBOX-CSS-GRID-spotify/#" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -130,8 +130,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/Proyecto01-ventas/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/Proyecto01-ventas/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -158,8 +158,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/chart-izard/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/chart-izard/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -186,8 +186,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://sergiomedis.github.io/PROYECTO-2-Aplicacion-CRUD/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://sergiomedis.github.io/PROYECTO-2-Aplicacion-CRUD/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -214,8 +214,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <a target="_blank" href="https://hammerhead-restorante.netlify.app/">
-        <Button on size="small">Ver</Button>
+  <a target="_blank" href="https://hammerhead-restorante.netlify.app/" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </a>
   </Typography>
 </CardContent>
@@ -243,8 +243,8 @@ export default function RowAndColumnSpacing() {
 />
 <CardContent>
   <Typography variant="body2" color="text.secondary">
-  <Link to ='/Columbus'>
-        <Button on size="small">Ver</Button>
+  <Link to ='/Columbus' style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
         </Link>
   </Typography>
 </CardContent>
@@ -256,7 +256,91 @@ export default function RowAndColumnSpacing() {
 </Card> 
         </Grid>
         <Grid item xs={3}>
-          <Item>4</Item>
+        <Card sx={{ maxWidth: 345,margin:15 }}>
+<CardHeader
+ 
+  title="
+  Namiki"
+  subheader="3D"
+/>
+<CardMedia
+  component="img"
+  height="194"
+  image="https://i.ibb.co/9hvBV6d/Captura-de-pantalla-2022-08-24-221053.png
+  "
+  alt="tech"
+/>
+<CardContent>
+  <Typography variant="body2" color="text.secondary">
+  <Link to ='/Namiki' style={{ textDecoration: 'none', color:'inherit'}}>
+        <Button variant="contained" on size="small">Ver</Button>
+        </Link>
+  </Typography>
+</CardContent>
+<CardActions disableSpacing>
+
+
+</CardActions>
+
+</Card> 
+        </Grid>
+        <Grid item xs={3}>
+        <Card sx={{ maxWidth: 345,margin:15 }}>
+<CardHeader
+ 
+  title="
+  Voyager"
+  subheader="3D"
+/>
+<CardMedia
+  component="img"
+  height="194"
+  image="https://i.ibb.co/pKZ7f2F/Captura-de-pantalla-2022-08-25-200503.png
+  "
+  alt="tech"
+/>
+<CardContent>
+  <Typography variant="body2" color="text.secondary">
+  <Link to ='/Voyager' style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
+        </Link>
+  </Typography>
+</CardContent>
+<CardActions disableSpacing>
+
+
+</CardActions>
+
+</Card> 
+        </Grid>
+        <Grid item xs={3}>
+        <Card sx={{ maxWidth: 345,margin:15 }}>
+<CardHeader
+ 
+  title="
+  Trailer"
+  subheader="Video"
+/>
+<CardMedia
+  component="img"
+  height="194"
+  image="https://i.ibb.co/Vvqj631/Captura-de-pantalla-2022-08-25-202732.png
+  "
+  alt="Video"
+/>
+<CardContent>
+  <Typography variant="body2" color="text.secondary">
+  <a target="_blank" href="https://www.youtube.com/watch?v=4piS59WpqiU" style={{ textDecoration: 'none'}}>
+        <Button variant="contained" on size="small">Ver</Button>
+        </a>
+  </Typography>
+</CardContent>
+<CardActions disableSpacing>
+
+
+</CardActions>
+
+</Card> 
         </Grid>
       </Grid>
     </Box>

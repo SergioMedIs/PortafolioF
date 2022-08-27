@@ -57,21 +57,21 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-       <Link to='/' >
+       <Link to='/'  style={{ textDecoration: 'none',color:'inherit'}} >
           <Button   size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
             sx={{ mr: 15}}  >Inicio</Button>
             </Link>
-            <Link to='/About'>
+            <Link to='/About' style={{ textDecoration: 'none',color:'inherit'}} >
           <Button    size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
             sx={{ mr: 15 }}  >About me</Button>
             </Link>
-            <Link to='/Gallery'>
+            <Link to='/Gallery'style={{ textDecoration: 'none',color:'inherit'}} >
           <Button     size="large"
             edge="start"
             color="inherit"

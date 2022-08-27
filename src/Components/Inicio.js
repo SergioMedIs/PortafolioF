@@ -1,64 +1,88 @@
-import * as React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
-import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
+
+import * as React from 'react';
+import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+const bull = (
+  <Box margin={17}
+    component="span"
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
 
-export default function TitlebarImageList() {
+const card = (
+  <React.Fragment>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Word of the Day
+      </Typography>
+      <Typography variant="h5" component="div">
+        {bull}PORTAFOLIO{bull}
+      </Typography>
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        2022
+      </Typography>
+      <Typography variant="body2">
+       Sergio Fabian Medina Islas
+        <br />
+        {'"Desarrollador Web FullStack"'}
+      </Typography>
+    </CardContent>
+
+  </React.Fragment>
+);
+
+export default function OutlinedCard() {
   return (
-    <ImageList sx={{ width: 1500, height: 540 , paddingLeft:65, paddingTop:12}}  >
-      <ImageListItem key="Subheader" cols={2}>
-       
-      </ImageListItem>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-         
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-            actionIcon={
-              <IconButton
-                sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                aria-label={`info about ${item.title}`}
-              >
-                <InfoIcon />
-              </IconButton>
-            }
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-
-    
-    
+    <Box sx={{ minWidth: 275 }}>
+      <Card variant="outlined">{card}</Card>
+   
+      <Timeline position="left">
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent color={'primary'}>Come</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent  color={'primary'}>Code</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent color={'primary'}>Dormir?</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+        </TimelineSeparator>
+        <TimelineContent color={'primary'}>Repite</TimelineContent>
+      </TimelineItem>
+    </Timeline>
+  
+    </Box>
+   
   );
-
 }
 
-const itemData = [
-  {
-    img: "https://i.ibb.co/hcQDn4M/bannmn.png",
-    title: "contactodirecto",
-    author: "Zerkon_97@hotmail.com",
-    rows: 2,
-    cols: 2,
-    featured: true
-  }
-  
-];
 
-
- 
-
+    
   
   

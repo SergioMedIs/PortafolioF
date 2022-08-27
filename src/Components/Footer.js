@@ -6,9 +6,9 @@ import Link from '@mui/material/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body2" color="inherit">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="">
         Sergio Fabian Medina Islas
       </Link>{' '}
       {new Date().getFullYear()}
@@ -43,17 +43,14 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: 'auto',
-          backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
+          backgroundColor:'dodgerBlue',
         }} 
        > 
-        <Container maxWidth="sm" color='black'>
-          <Typography variant="body1">
+        <Container maxWidth="sm" color='inherit'>
+          <Typography variant="body1" color='white'>
            Portafolio
           </Typography>
-          <Copyright />
+          <Copyright  />
         </Container>
       </Box>
     </Box>

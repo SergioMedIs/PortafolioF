@@ -1,14 +1,15 @@
-import * as React from 'react';
+import  React , { Suspense } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-/* import { makeStyles } from '@mui/material'; */
+import { Canvas } from '@react-three/fiber';
+import { Stars } from '@react-three/drei/core';
+import { OrbitControls} from "@react-three/drei";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Routes, Route, Link } from "react-router-dom";
-
-
+import { Link } from "react-router-dom";
+import { createTheme } from '@mui/material/styles';
 
 /* const useStyles = makeStyles({
 navBarButton:{
@@ -24,9 +25,27 @@ navBarButton:{
 }) 
  */
 export default function ButtonAppBar() {
-     /* const classes = useStyles()  */
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#757ce8',
+        main: '#3f50b5',
+        dark: '#002884',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#ff7961',
+        main: '#f44336',
+        dark: '#ba000d',
+        contrastText: '#000',
+      },
+    },
+  });
   return (
-    <Box sx={{ flexGrow: 1 }}>
+
+    <Box sx={{ flexGrow: 1 }}> 
+     
       <AppBar position="fixed" color='primary'>
         <Toolbar>
           <IconButton
@@ -57,16 +76,18 @@ export default function ButtonAppBar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 15 }}  >Gallerry</Button>
+            sx={{ mr: 15 }}  >Gallery</Button>
             </Link>
-          <Button     size="large"
+        {/*   <Button     size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 5}} >Pictures</Button>
+            sx={{ mr: 5}} >Pictures</Button> */}
           
         </Toolbar>
       </AppBar>
+   
     </Box>
+      
   );
 }

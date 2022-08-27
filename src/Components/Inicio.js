@@ -11,7 +11,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function TitlebarImageList() {
   return (
-    <ImageList sx={{ width: 1800, height: 540 , paddingLeft:65, paddingTop:12}}  >
+    <ImageList sx={{ width: 1500, height: 540 , paddingLeft:65, paddingTop:12}}  >
       <ImageListItem key="Subheader" cols={2}>
        
       </ImageListItem>

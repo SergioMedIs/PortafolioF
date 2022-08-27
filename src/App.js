@@ -11,10 +11,13 @@ import { Namiki } from './Components/Namiki';
 import { Voyager } from './Components/Voyager';
 
 
+
+
 function App() {
   return (
     <div className="App">
      <Navbar/>  
+ 
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="about" element={<AboutMe/>} /> 

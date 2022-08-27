@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber/";
 import { Namikijs } from "./models/Namikijs";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Stars } from "@react-three/drei";
 
 export function Namiki(){
 
@@ -12,10 +12,12 @@ export function Namiki(){
 <Canvas camera={{zoom:100 , position:[45,40,120],}} >
     <ambientLight intensity={0.5}/>
     <pointLight position={[35,35,0]} intensity={0.5}/>
+    <Stars count={100000} factor={15}/>
         <Suspense fallback={null}>
     <Namikijs/>
     </Suspense>
     <OrbitControls/>
+   
 </Canvas>
 </div>
 </>

@@ -48,7 +48,7 @@ function createData(
 const rows = [
   createData('Maya3D', 'Medio', ),
   createData('Blender', 'Medio/Alto'),
-  createData('Adobe Affther Effects', 'Medio'),
+  createData('Adobe After Effects', 'Medio'),
   createData('Adobe Premiere', 'Medio/Alto'),
   createData('Cinema 3D', 'Medio'),
   createData('PhotoShop', 'Medio'),
@@ -75,9 +75,9 @@ export default function ImgMediaCard() {
           Sergio Fabian Medina Islas
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          ►Ingeniero en Animacion Digital y Efectos visuales.
-          ►Desarrollador Full Stack.
-          ►Técnico en  Administrador de Empresas
+          ►Ingeniero en Animacion Digital y Efectos visuales : manejo de programas como Blender, CinemA 4d, Maya, Premiere, After Effects,  modelos 3D, rotopologias, esqueletos(simples),staging
+          ►Desarrollador Full Stack. manejo de HTML, CSS, React, JavaScript, API
+      
           me gusta jugar videojeugos en mi tiempo libre, dibujar o salir a camniar.
           amante de la tecnológia, hardware, armar computadoras.
         </Typography>

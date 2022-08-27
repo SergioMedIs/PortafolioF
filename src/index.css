@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(59, 59, 59);
+  background-image: url(https://i.ibb.co/9HWmDcV/Sin-t-tulo-12.png);
+  background-repeat: no-repeat;
 }
 
 code {
